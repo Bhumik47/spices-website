@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+    width: 100vw;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.header.scrolled-down {
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.why-choose {
+    width: 100vw;
+  background-color: black;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.why-choose p {
+  max-width: 50%;
+  font-size: 1.5rem;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center the content */
+  margin: auto 5rem;
+  color: white;
+}
+
+.header-tabs {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+/* Adjust the styles for the links as needed */
+.header-tabs a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.products-container {
+  width: 100vw;
+}
+.products-container .our-products {
+  height: 50vh;
+  background-image: url(./Assets/dark-theme-background-0rpr12gxz1cubb05.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+
+}
+.product-list{
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    gap: 2rem;
+}
+
+.products{
+    display: flex;
+    list-style: none;
+    width: 100vw;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 25vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product p{
+    font-size: 2rem;
+    color:black;
+    transition: font-size 0.3s;
+}
+
+
+
+
+
+/* Initial styles for the product items */
+.product {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for background and transform */
+  transform-origin: center center; /* Set the transformation origin to the center */
+  cursor: pointer;
+}
+
+
+/* Hover styles for the product items */
+.product:hover {
+  background-color: transparent; /* Remove darkness on hover */
+  transform: scale(1.05); /* Zoom in by 10% on hover */
+  font-weight: 900;
+}
+
+.product:hover p {
+  font-size: 2.5rem; /* Increase font size on hover */
+}
+
+.visit-us{
+    background-color: #d71d1d;
+}
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 1.5rem;
+}
+.contact-us{
+background: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 33vw;
+    height: 100vh;
+    gap: 1.5rem;
+
+}
+.contact-us h1{
+    color: #d71d1d;
+}
+.contact-us h1 span{
+    color: white;
+}
+.contact-us p{
+    color: white;
+}
+.visit-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+    height: 100vh;
+}
+.visit-us h1 span{
+    color: white;
+}
+.visit-us p{
+    color: #000;
+}
+.socials{
+    display: flex;
+    gap: 1rem;
+}
+.tell-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+}
+
+footer{
+    background: #000;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    font-size: 2rem;
+}
